@@ -1,0 +1,286 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    position: relative;
+    text-align: center;
+    height: 100%;
+    overflow: hidden;
+}
+
+.my-profile { 
+    background-color: #777777;
+    color: #c09a48;
+    float: left;
+    width: 30%;
+    height: 100%;
+    box-shadow: inset 0px 0px 59px 0px rgba(0, 0, 0, 0.4);
+}
+
+.my-experience {
+    overflow: auto;
+    background-color: #45474c;
+    color: #c09a48;
+    float: left;
+    width: 70%;
+    position: relative;
+    height: 100%;
+    box-shadow: inset 0px 0px 59px 0px rgba(112, 111, 112, 0.7);
+}
+
+.section-padding {
+    padding: 60px 40px;
+}
+
+.content {
+    height: 100%;
+}
+
+.image-name-wrapper {
+    overflow: hidden;
+}
+
+.profile-name {
+    float: left;
+    text-align: left;
+    line-height: 30px;
+    font-weight: 900;
+    font-size: 2vw;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    border: 5px solid #c09a48;
+    float: left;
+    margin-right: 30px;
+}
+
+.contact-info {
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+.title-list {
+    float: left;
+    width: 45%;
+    text-align: left;
+    padding: 0;
+    line-height: 30px;
+    font-weight: 900;
+    font-size: 1.2vw;
+}
+
+.value-list {
+    float: left;
+    width: 55%;
+    text-align: left;
+    padding: 0;
+    line-height: 30px;
+    font-size: 1.2vw;
+}
+
+.about-me {
+    margin-top: 40px;
+    font-size: 1vw;
+    overflow: hidden;
+}
+
+.github-page {
+    margin-top: 40px;
+}
+
+.page-link {
+    line-height: 30px;
+    font-size: 1.2vw;
+}
+
+.accordion, .accordion1 {
+    background-color: rgb(179, 177, 177);
+    color: #c09a48;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 1s;
+    font-size: 1vw;
+    font-weight: 600;
+}
+
+.accordion, .accordion1 {
+    border-radius: 5px;
+}
+
+.active, .accordion:hover, .accordion1:hover {
+    background-color: rgba(151, 151, 151, 0.842);
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: rgba(207, 207, 207, 0.815);
+    overflow: hidden;
+    text-align: left;
+    font-size: 1vw;
+    color: #c18b17;  
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    width: 99.5%;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+.experience-list {
+    margin-top: 50px;
+}
+
+.accomplishment-wrapper {
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.accomplishment-wrapper h3 {
+    margin-bottom: 0;
+}
+
+.accomplishment-place {
+    float: left;
+    width: 30%;
+    text-align: left;
+    padding: 0;
+    line-height: 30px;
+    font-size: 1vw;
+    font-weight: 900;
+}
+
+.accomplishment-desc {
+    float: left;
+    width: 70%;
+    text-align: left;
+    padding: 0;
+    line-height: 30px;
+    font-size: 1vw;
+}
+
+.skills-langs-wrapper {
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.skills-section, .languages-section {
+    float: left;
+    width: 50%;
+    text-align: left;
+}
+
+.skills-section h3, .languages-section h3 {
+    padding-left: 40px;
+}
+
+.skill-percent {
+    margin-bottom: 10px;
+    position: relative;
+}
+.skill-percent::after {
+    content: "";
+    width: 100%;
+    height: 6px;
+    background: #4a4e51;
+    display: block;
+    margin-top: 3px;
+}
+
+.skill-percent::before{
+    content: "";
+    height: 6px;
+    background: #c09a48;
+    position: absolute;
+    margin-top: 3px;
+    bottom: 0;
+}
+
+.skill-percent:nth-child(1)::before {width: 75%; animation: skill_1 0.6s ease;}
+.skill-percent:nth-child(2)::before {width: 75%; animation: skill_2 0.6s ease;} 
+.skill-percent:nth-child(3)::before {width: 30%; animation: skill_3 0.6s ease;}
+.skill-percent:nth-child(4)::before {width: 30%; animation: skill_4 0.6s ease;}
+.skill-percent:nth-child(5)::before {width: 70%; animation: skill_5 0.6s ease;}
+.skill-percent:nth-child(6)::before {width: 70%; animation: skill_6 0.6s ease;}
+.skill-percent:nth-child(7)::before {width: 50%; animation: skill_7 0.6s ease;}
+.skill-percent:nth-child(8)::before {width: 75%; animation: skill_8 0.6s ease;}
+  
+
+@keyframes skill_1 {from {width: 0%;}to {width: 75%;}}
+@keyframes skill_2 {from {width: 0%;}to {width: 75%;}}
+@keyframes skill_3 {from {width: 0%;}to {width: 30%;}}
+@keyframes skill_4 {from {width: 0%;}to {width: 30%;}}
+@keyframes skill_5 {from {width: 0%;}to {width: 70%;}}  
+@keyframes skill_6 {from {width: 0%;}to {width: 70%;}}
+@keyframes skill_7 {from {width: 0%;}to {width: 50%;}}
+@keyframes skill_8 {from {width: 0%;}to {width: 75%;}}
+
+.language-percent {
+    margin-bottom: 10px;
+    position: relative;
+}
+.language-percent::after {
+    content: "";
+    width: 100%;
+    height: 6px;
+    background: #4a4e51;
+    display: block;
+    margin-top: 3px;
+}
+
+.language-percent::before{
+    content: "";
+    height: 6px;
+    background: #c09a48;
+    position: absolute;
+    margin-top: 3px;
+    bottom: 0;
+}
+
+.language-percent:nth-child(1)::before {width: 100%; animation: language_1 0.6s ease;}
+.language-percent:nth-child(2)::before {width: 100%; animation: language_2 0.6s ease;} 
+.language-percent:nth-child(3)::before {width: 75%; animation: language_3 0.6s ease;}
+.language-percent:nth-child(4)::before {width: 60%; animation: language_4 0.6s ease;}
+.language-percent:nth-child(5)::before {width: 10%; animation: language_5 0.6s ease;}  
+
+@keyframes language_1 {from {width: 0%;}to {width: 100%;}}
+@keyframes language_2 {from {width: 0%;}to {width: 100%;}}
+@keyframes language_3 {from {width: 0%;}to {width: 75%;}}
+@keyframes language_4 {from {width: 0%;}to {width: 60%;}}
+@keyframes language_5 {from {width: 0%;}to {width: 10%;}}  
+
+
+.personal-interests {
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.personal-interests h3 {
+    margin-bottom: 25px;
+}
+
+
+.personal-interest-image {
+    width: 64px;
+    height: 64px;
+}
+
+.football-wrapper, .drawing-wrapper, .cycling-wrapper, .gaming-wrapper {
+    float: left;
+    width: 25%;
+}
