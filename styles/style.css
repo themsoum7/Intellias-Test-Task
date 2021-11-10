@@ -17,7 +17,7 @@ html, body {
 
 .my-profile { 
     background-color: #777777;
-    color: #c09a48;
+    color: #8cc117;
     float: left;
     width: 30%;
     height: 100%;
@@ -27,7 +27,7 @@ html, body {
 .my-experience {
     overflow: auto;
     background-color: #45474c;
-    color: #c09a48;
+    color: #8cc117;
     float: left;
     width: 70%;
     position: relative;
@@ -59,7 +59,7 @@ html, body {
     width: 150px;
     height: 150px;
     border-radius: 150px;
-    border: 5px solid #c09a48;
+    border: 5px solid #8cc117;
     float: left;
     margin-right: 30px;
 }
@@ -105,7 +105,7 @@ html, body {
 
 .accordion, .accordion1 {
     background-color: rgb(179, 177, 177);
-    color: #c09a48;
+    color: #568d6d;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -123,6 +123,7 @@ html, body {
 
 .active, .accordion:hover, .accordion1:hover {
     background-color: rgba(151, 151, 151, 0.842);
+    color: #8cc117;
 }
 
 .panel {
@@ -131,7 +132,7 @@ html, body {
     overflow: hidden;
     text-align: left;
     font-size: 1vw;
-    color: #c18b17;  
+    color: #568d6d;  
     max-height: 0;
     transition: max-height 0.2s ease-out;
     width: 99.5%;
@@ -205,7 +206,7 @@ ul {
 .skill-percent::before{
     content: "";
     height: 6px;
-    background: #c09a48;
+    background: #568d6d;
     position: absolute;
     margin-top: 3px;
     bottom: 0;
@@ -246,7 +247,7 @@ ul {
 .language-percent::before{
     content: "";
     height: 6px;
-    background: #c09a48;
+    background: #568d6d;
     position: absolute;
     margin-top: 3px;
     bottom: 0;
