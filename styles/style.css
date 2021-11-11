@@ -194,6 +194,7 @@ ul {
     margin-bottom: 10px;
     position: relative;
 }
+
 .skill-percent::after {
     content: "";
     width: 100%;
@@ -275,7 +276,6 @@ ul {
     margin-bottom: 25px;
 }
 
-
 .personal-interest-image {
     width: 64px;
     height: 64px;
@@ -284,4 +284,84 @@ ul {
 .football-wrapper, .drawing-wrapper, .cycling-wrapper, .gaming-wrapper {
     float: left;
     width: 25%;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        height: initial;
+    }
+
+    .my-profile, .my-experience, .skills-section, .languages-section {
+        overflow: initial;
+        float: none;
+        width: 100%;
+        background-color: #45474c;
+        box-shadow: initial;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+
+    .wrapper {
+        overflow: initial;
+    }
+
+    .profile-name {
+        font-size: 7vw;
+    }
+
+    .title-list, .value-list, .about-me, .page-link {
+        font-size: 4vw;
+    }
+
+    .edu-exp-title, .accomplishment-wrapper h3, .skills-section h3, .languages-section h3 {
+        font-size: 5vw;
+    }
+
+    .section-padding {
+        padding: 40px 20px 0 20px;
+    }
+
+    .accordion, .accordion1 {
+        font-size: 2.5vw;
+        border-radius: 10px;
+        border-bottom: 1px solid #568d6d;
+    }
+
+    .accordion:hover, .accordion1:hover {
+        border-color: #8cc117;
+    }
+
+    .panel {
+        width: 95%;
+        font-size: 2.5vw;
+    }
+
+    .accomplishment-place, .accomplishment-desc {
+        font-size: 2.5vw;    
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    .accomplishment-place li, .accomplishment-desc li {
+        margin-top: 15px;
+    }
+
+    .languages-section {
+        margin-top: 70px;
+    }
+    
+    .skills-section h3, .languages-section h3 {
+        text-align: center;
+        padding: 0;
+    }
+
+    .personal-interest-image {
+        width: 32px;
+        height: 32px;
+    }
 }
